@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="556.0" prefWidth="476.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trafficlightslab.FXMLDocumentController">
+    <children>
+      <Circle fx:id="redLight" fill="WHITE" layoutX="238.0" layoutY="62.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="yellowLight" fill="WHITE" layoutX="238.0" layoutY="168.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="greenLight" fill="WHITE" layoutX="238.0" layoutY="278.0" radius="47.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="label" layoutX="29.0" layoutY="358.0" minHeight="16" minWidth="69" text="Red Delay" />
+      <Label layoutX="29.0" layoutY="393.0" text="Yellow Delay" />
+      <Label layoutX="29.0" layoutY="431.0" text="Green Delay" />
+      <Button fx:id="stopButton" layoutX="68.0" layoutY="487.0" mnemonicParsing="false" onAction="#handleStop" text="Stop" />
+      <Button fx:id="startButton" layoutX="322.0" layoutY="487.0" mnemonicParsing="false" onAction="#handleStart" text="Start" />
+      <Slider fx:id="redSlider" blockIncrement="1.0" layoutX="127.0" layoutY="360.0" majorTickUnit="1.0" max="30.0" minorTickCount="0" prefHeight="14.0" prefWidth="279.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="15.0" />
+      <Slider fx:id="yellowSlider" blockIncrement="1.0" layoutX="127.0" layoutY="395.0" majorTickUnit="1.0" max="30.0" minorTickCount="0" prefHeight="14.0" prefWidth="279.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="2.0" />
+      <Slider fx:id="greenSlider" blockIncrement="1.0" layoutX="127.0" layoutY="433.0" majorTickUnit="1.0" max="30.0" minorTickCount="0" prefHeight="14.0" prefWidth="279.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" value="25.0" />
+    </children>
+</AnchorPane>
